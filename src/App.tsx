@@ -1,15 +1,12 @@
-import { useId, useState } from "react";
+import { Accordeon } from "./Day2 - controlled component + useCallback/Accordeon";
 
 const App = () => {
-  const counterId = useId();
-  const [counter, setCounter] = useState(0);
-  
-  const handleClick = () => { setCounter(c => c + 1); }
-
-  return (<div>
-    <button onClick={ handleClick}>Press</button>
-    <label htmlFor={counterId}>Counter:</label>&nbsp;<output id={counterId} data-testid='counter'>{counter}</output>
-  </div>);
+  const qAs = [
+    { id: '1', q: 'What\'s the meaning of life, universe, and everything?', a: '42' },
+    { id: '2', q: 'Why did the chicken cross the road?', a: 'To improve its metrics' },
+    { id: '3', q: 'Something else', a: 'Answer' }
+  ]
+  return <Accordeon qAs={qAs}/>
 }
 
 export default App;
