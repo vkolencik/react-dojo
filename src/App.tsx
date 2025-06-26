@@ -1,4 +1,4 @@
-import { Accordeon } from "./Day2 - controlled component + useCallback/Accordeon";
+import { Accordion } from "./Day2 - controlled component + useCallback/Accordion.tsx";
 
 const App = () => {
   const qAs = [
@@ -6,7 +6,7 @@ const App = () => {
     { id: '2', q: 'Why did the chicken cross the road?', a: 'To improve its metrics' },
     { id: '3', q: 'Something else', a: 'Answer' }
   ]
-  return <Accordeon qAs={qAs}/>
+  return <Accordion qAs={qAs}/>
 }
 
 export default App;
