@@ -1,20 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-
-type Item = { id: number; name: string };
-
-// fake API
-function fakeSearch(q: string): Promise<Item[]> {
-  return new Promise(resolve =>
-    setTimeout(() =>
-      resolve(
-        ['Ada', 'Grace', 'Linus', 'Alan', 'Barbara', 'Edsger']
-          .map((n, i) => ({ id: i, name: n }))
-          .filter(it => it.name.toLowerCase().includes(q.toLowerCase()))
-      ),
-      200 + Math.random() * 300
-    )
-  );
-}
+import { useEffect, useState } from 'react';
+import { fakeSearch, type Item } from './fakeSearch';
 
 export const SearchBox = () => {
   const [query, setQuery] = useState('');
