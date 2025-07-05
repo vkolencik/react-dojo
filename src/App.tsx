@@ -1,7 +1,7 @@
-import { SearchBox4 } from "./Day4 - Custom hook/SearchBox.tsx";
+import { Page5 } from "./Day5 - Lazy loading/Page.tsx";
 
 const App = () => {
-  return <SearchBox4/>
+  return <Page5/>
 }
 
 export default App;
