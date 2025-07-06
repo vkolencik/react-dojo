@@ -1,7 +1,9 @@
-import { Page5 } from "./Day5 - Lazy loading/Page.tsx";
+import { Day6 } from "./Day6 - Context/Day6.tsx";
 
 const App = () => {
-  return <Page5/>
-}
+  return (
+    <Day6/>
+  );
+};
 
 export default App;
